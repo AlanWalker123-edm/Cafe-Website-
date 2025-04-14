@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Café de Barista</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header class="booking-header">
+        <h1>Café de Barista</h1>
+        <h2>Book Your Private Event</h2>
+    </header>
+
+    <section class="booking-form">
+        <h2>Event Booking</h2>
+        <form action="#" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="event-type">Event Type:</label>
+            <select id="event-type" name="event-type" required>
+                <option value="birthday">Birthday Party</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="anniversary">Anniversary Celebration</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <label for="special">Special Requests:</label>
+            <textarea id="special" name="special" rows="4"></textarea>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <footer class="booking-footer">
+        <p>&copy; 2025 Café de Barista. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

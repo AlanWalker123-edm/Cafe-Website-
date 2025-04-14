@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+	background:url("sabri-tuzcu-bEuFMjwZAi4-unsplash.jpg")no-repeat center center/cover;
+	color:white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    position: relative;
+    color: #f8e1c4;
+    font-family: 'Georgia', serif;
+    z-index: 2;
+}
+
+.logo {
+    font-size: 3em;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+.welcome-text {
+    font-size: 1.5em;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeIn 3s forwards 1.5s;
+}
+
+.enter-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #b8860b;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 3s forwards 3s;
+}
+
+.enter-btn:hover {
+    background: #d4a017;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
